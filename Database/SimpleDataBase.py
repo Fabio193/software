@@ -1,6 +1,5 @@
 ### PROGETTO AUTONOMO SVOLTO CON L'AUSILIO DI TUROIAL O PROGRAMMI OPEN SOURCE
 ### GIORNI DI LAVORO 04/12/2025 - 09/12/2025
-###  Non mi sono mai impeganto così tanto ahahha 
 ### !IL DOSSIERGAGGIO O LA RACCOLTA DI DATI SENSEBILI È ILLEGALE!
 
 import os
@@ -228,4 +227,5 @@ try:
 
 except KeyboardInterrupt:
     print("[*] Aborto")
+
 
