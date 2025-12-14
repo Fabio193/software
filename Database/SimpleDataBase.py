@@ -109,7 +109,7 @@ class database:
         db = self._carica()
         trovati = []
         if voce_target is not None:
-            trovati = [r for r in db if r.get("Voce", "").lower() == voce_target.lower()]
+            trovati = [r for r in db if r.get("Voce", "").lower() == voce_target.lower()]          ### SI PUO VERIFICARE UN ERORRE DOPO TOT TENTATAVI. NON RISOLTO!
         if nome_target and cognome_target:
             trovati = [
                 r for r in db
@@ -146,7 +146,7 @@ try:
         if scelta == "1":
             d = database(None, None, None, None, None, None, None, None, None, None, None)
             d.print()
-            input("[*] Premi invio per continuare...")
+            input("[*] Premi invio per continuare.")
 
         elif scelta == "2":
             print("-" * 40)
@@ -164,7 +164,7 @@ try:
 
             d = database(voce, nome, cognome, età, data, stato, cittadinanza, comune, residenza, codice, recapito)
             d.aggiungi()
-            input("[*] Premi invio per continuare...")
+            input("[*] Premi invio per continuare.")
         elif scelta == "3":
             voce_target = input("[+] Voce da sovrascrivere: ")
             print("\n[*] Inserisci i nuovi dati:")
@@ -227,5 +227,6 @@ try:
 
 except KeyboardInterrupt:
     print("[*] Aborto")
+
 
 
